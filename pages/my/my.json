@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "imageButton-cmp": "/components/imageButton/imageButton",
+    "preview-cmp": "/components/preview/preview"
+  }
+}

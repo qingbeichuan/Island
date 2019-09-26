@@ -1,0 +1,6 @@
+/**全局默认样式**/
+/*组件只能继承少数样式，页面能继承大多数*/
+page{
+  font-family: "PingFangSC-Thin";/* ios默认苹方，Android默认思源 */
+  font-size: 32rpx;
+}

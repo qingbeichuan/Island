@@ -1,0 +1,23 @@
+<!--pages/book/book.wxml-->
+<view class="container" wx:if="{{!searchPanel}}">
+  <view class="header">
+    <view class='box' bind:tap="onActivateSearch">
+      <image src="/images/icon/search.png" />
+      <text>搜索书籍</text>
+    </view> 
+  </view> 
+  <view class="sub-container">
+    <image class="head-img" src="/images/book/quality.png" />
+    <view class="books-container">
+      <!-- 循环书籍列表 -->
+      <!-- wx:key object类型 key为 字符串或数字 -->
+      <!--        string或number类型 key为 *this-->
+      <block wx:key="{{id}}" wx:for="{{books}}">
+        <book-cmp book="{{item}}" class="book" />
+      </block>
+    </view>
+  </view> 
+</view>
+
+<!-- 搜索组件面板 -->
+<search-cmp more="{{more}}" bindcancel="onCancel" wx:if="{{searchPanel}}"/>

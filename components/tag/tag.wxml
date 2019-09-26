@@ -1,0 +1,6 @@
+<!--components/tag/tag.wxml-->
+<view bind:tap="onTap" class='container tag-class'>
+  <text>{{text}}</text>
+  <!-- 给插槽命名 -->
+  <slot class="after" name="after"></slot>
+</view>

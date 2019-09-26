@@ -1,0 +1,16 @@
+var format = function (text) {//不能使用const
+  if (!text) {
+    return
+  }
+  var reg = getRegExp('\\\\n', 'g')//转换\\n
+  return text.replace(reg, '\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+}
+
+var limit = function (arr, length) {//显示十条短评
+  return arr.slice(0, length)
+}
+
+module.exports = {
+  format: format,
+  limit: limit
+}
