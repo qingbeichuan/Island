@@ -71,5 +71,5 @@ Page({
         posting: false
       })
     })
-  },
+  }
 })
