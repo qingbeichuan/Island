@@ -2,6 +2,7 @@
   "usingComponents": {
     "tag-cmp":"/components/tag/tag",
     "like-cmp": "/components/like/like",
-    "mask-cmp": "/components/mask/mask"
+    "mask-cmp": "/components/mask/mask",
+    "imageButton-cmp": "/components/imageButton/imageButton",
   }
 }
